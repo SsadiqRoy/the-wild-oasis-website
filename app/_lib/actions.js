@@ -63,6 +63,11 @@ export async function bookCabin(pathname, bookData, formData) {
   bookData.numGuests = numGuests;
   bookData.observations = observations;
   bookData.guestId = session.user.id;
+  bookData.extrasPrice = 0;
+  bookData.totalPrice = bookData.cabinPrice;
+  bookData.isPaid = false;
+  bookData.hasBreakfast = false;
+  bookData.status = 'unconfirmed';
 
   await createBooking(bookData);
 
