@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -9,7 +10,9 @@ const nextConfig = {
         pathname: '/storage/v1/object/public/cabins/**',
       },
     ],
+    unoptimized: true,
   },
+  distDir: '_next',
 };
 
 export default nextConfig;
