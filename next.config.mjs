@@ -13,7 +13,7 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
-  distDir: "_next",
+  // distDir: "_next",
 };
 
 export default nextConfig;
